@@ -1,0 +1,14 @@
+---
+applications:
+- name: azure-doge
+  memory: 512M
+  path: target/azure-doge-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
+  env:
+    azure.storage.account.name: 
+    azure.storage.account.key: 
+    AWS_ACCESS_KEY: 
+    AWS_SECRET_ACCESS_KEY:  
+    s3proxy.azureendpoint: 
+    s3proxy.awsendpoint: 
+    containername: 
