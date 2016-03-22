@@ -17,38 +17,6 @@ public class PhotoController {
 		this.library = library;
 		this.manipulator = new DogePhotoManipulator();
 	}
-//	@RequestMapping(value = "/imagesaws", produces = "image/jpeg")
-//	public byte[] doge1(@RequestParam(value="very", defaultValue="") String very, 
-//			@RequestParam(value="so", defaultValue="") String so,
-//			@RequestParam(value="such", defaultValue="") String such) throws Exception 
-//	{
-//		byte[] photo = library.getFromAWSS3Storage("cat.jpeg");		
-//		return manipulator.overLay(photo,very, so, such);
-//	}
-//	@RequestMapping(value = "/imagesazure", produces = "image/jpeg")
-//	public byte[] doge12(@RequestParam(value="very", defaultValue="") String very, 
-//			@RequestParam(value="so", defaultValue="") String so,
-//			@RequestParam(value="such", defaultValue="") String such) throws Exception 
-//	{
-//		byte[] photo = library.getFromAzureBlobStorage("dog.jpeg");		
-//		return manipulator.overLay(photo,very, so, such);
-//	}
-//	@RequestMapping(value = "/images3proxyaws", produces = "image/jpeg")
-//	public byte[] doge2(@RequestParam(value="very", defaultValue="") String very, 
-//			@RequestParam(value="so", defaultValue="") String so,
-//			@RequestParam(value="such", defaultValue="") String such) throws Exception 
-//	{
-//		byte[] photo = library.getFromS3ProxyAWSStorage("cat.jpeg");		
-//		return manipulator.overLay(photo,very, so, such);
-//	}
-//	@RequestMapping(value = "/images3proxyazure", produces = "image/jpeg")
-//	public byte[] doge21(@RequestParam(value="very", defaultValue="") String very, 
-//			@RequestParam(value="so", defaultValue="") String so,
-//			@RequestParam(value="such", defaultValue="") String such) throws Exception 
-//	{
-//		byte[] photo = library.getFromS3ProxyAzureStorage("dog.jpeg");		
-//		return manipulator.overLay(photo,very, so, such);
-//	}
 
 	@RequestMapping(value = "/azure", produces = "application/json")
 	public byte[] doge3() throws Exception 
@@ -99,11 +67,4 @@ public class PhotoController {
 		byte[] photo = library.getFromS3ProxyAWSStorage("aws.pdf");		
 		return photo;
 	}
-	
-	//@RequestMapping(value = "/", produces = "image/jpeg")
-	//public byte[] doge() throws Exception 
-	//{
-	//	byte[] photo = library.getFromStorageAccount("doge.jpeg");		
-	//	return manipulator.overLay(photo,"Azure", "Cloud Native", "Pivotal");
-	//}
 }

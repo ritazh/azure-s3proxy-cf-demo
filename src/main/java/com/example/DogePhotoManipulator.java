@@ -106,10 +106,6 @@ public class DogePhotoManipulator {
 
 		public void render(BufferedImage image, Graphics2D g) {
 			double r = image.getHeight() / 448.0;
-//			renderText(g, "wow", 32, Color.MAGENTA, 25, r * 43);
-//			renderText(g, "very " + this.very, 29, Color.GREEN, 105, r * 115);
-//			renderText(g, "so " + this.so, 20, Color.MAGENTA, 25, r * 330);
-//			renderText(g, "such " + this.such, 30, Color.ORANGE, 95, r * 385);
 		}
 
 		private void renderText(Graphics2D g, String text, int fontSize, Paint paint,

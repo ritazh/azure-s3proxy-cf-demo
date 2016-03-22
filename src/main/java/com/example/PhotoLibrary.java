@@ -22,8 +22,6 @@ import com.amazonaws.ClientConfiguration;
 import com.amazonaws.Protocol;
 import com.amazonaws.auth.BasicAWSCredentials;
 
-//import com.amazonaws.auth.profile.ProfileCredentialsProvider;
-
 @Service
 public class PhotoLibrary {
 	
@@ -58,7 +56,7 @@ public class PhotoLibrary {
 		this.awsAccessKey = AWS_ACCESS_KEY;
 		this.awsAccessSecret = AWS_SECRET_ACCESS_KEY;
 	}
-	// azure
+	// azure sdk
 	public byte[] getFromAzureBlobStorage(String name) throws Exception {
 		CloudStorageAccount storageAccount = CloudStorageAccount.parse(azureConnectionString);
 		CloudBlobClient blobClient = storageAccount.createCloudBlobClient();
@@ -70,7 +68,7 @@ public class PhotoLibrary {
 		byte[] image = outStream.toByteArray();
 		return image;
 	}	
-	// aws
+	// aws sdk
 	public byte[] getFromAWSS3Storage(String name) throws Exception {
 		
 		AmazonS3 s3Client = new AmazonS3Client(new EnvironmentVariableCredentialsProvider());        
@@ -80,7 +78,7 @@ public class PhotoLibrary {
 		return IOUtils.toByteArray(objectData);
 	}
 	
-	// s3proxy
+	// s3proxy using s3 sdk
 	public byte[] getFromS3ProxyAzureStorage(String name) throws Exception {
 	
 		return this.getFromS3Proxy(name,  this.azureAccountName, this.azureAccessKey, this.s3AzureEndpoint);
