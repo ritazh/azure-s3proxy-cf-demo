@@ -37,8 +37,8 @@
 ```
 azure.storage.account.name=
 azure.storage.account.key=
-s3proxy.azureendpoint= <this is the endpoint for the s3proxy for azure>
-s3proxy.awsendpoint= <this is the endpoint for the s3proxy for aws>
+s3proxy.azureendpoint= <this is the endpoint for the s3proxy for azure, make sure to use the new domain created in previous section, for example: "s3proxy.app.[cf url]">
+s3proxy.awsendpoint= <this is the endpoint for the s3proxy for aws, make sure to use the new domain created in previous section, for example: "s3proxyaws.s3proxyapp.[cf url]" >
 containername= <this is the container already created in your storage account for both azure and aws>
 AWS_ACCESS_KEY=
 AWS_SECRET_ACCESS_KEY=
