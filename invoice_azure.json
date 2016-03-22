@@ -1,0 +1,198 @@
+[
+    {
+  "invoice": {
+    "id": 31,
+    "connection": { 
+      "id": 12878,
+      "hash_key": "qavTJeHbZItwcg",
+      "name": "Jenny"
+     },
+    "due_date": "2016-4-18",
+    "date": "2016-03-18",
+    "hash_key": "q00MYh2dywH6RA",
+    "state": "draft",
+    "summary": "Invoice summary",
+    "note": "Invoice Note",
+    "company_id": 2459,
+    "statement_no": "IN-001",
+    "payment_options": ["paypal", "cash", "check"],
+    "allow_partial_payments": true,
+    "send_receipts_automatically": true,
+    "po_number": "PO-number",
+    "currency_iso_code": "USD",
+    "currency_symbol": "$",
+    "send_reminders": false,
+    "billed_total": "100.00",
+    "sub_total": "100.00",
+    "total_due": "0.00",
+    "paid_total": "0.00",
+    "created_at": "2016-01-22T19:22:28Z",
+
+    "taxes": [{
+      "id": 3,
+      "name": "VAT",
+      "key": 23,
+      "combined_amount_percent": "5%",
+      "percentage": true
+    }, {...}],
+
+    "discounts": [{
+      "id": 4,
+      "name": "DIS",
+      "key": 145,
+      "combined_amount_percent": "5",
+      "percentage": false
+    }, {...}],
+
+    "shipping_amounts": [{
+      "id": 5,
+      "name": "DHL",
+      "key": 205,
+      "combined_amount_percent": "5",
+      "percentage": false
+    }, {...}],
+
+    "items": [{
+      "id": 245,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "price": "10.00",
+      "quantity": "10",
+      "unit": "hourly",
+      "total": "100.00",
+      "sort_order": 1,
+      "created_at": "2015-01-22T19:22:28Z"
+    }, {...}],
+
+    "expenses": [{
+      "id": 246,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "amount": "10.00",
+      "total": "100.00",
+      "sort_order": 2,
+      "created_at": "2015-01-22T19:22:28Z"
+    },{...}],
+
+    "tasks": [{
+      "id": 300,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "duration": "120",
+      "rate": "10.00",
+      "total": "20.00",
+      "sort_order": 3,
+      "created_at": "2015-01-22T19:22:28Z"
+    }, {...}],
+
+    "trips": [{
+      "id": 340,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "distance": "2",
+      "rate": "10.00",
+      "total": "20.00",
+      "sort_order": 4,
+      "created_at": "2015-01-22T19:22:28Z"
+    }]
+  }
+  },
+  {
+  "invoice": {
+    "id": 32,
+    "connection": { 
+      "id": 12878,
+      "hash_key": "qavdrtokHbZItwcg",
+      "name": "Mary"
+     },
+    "due_date": "2016-10-18",
+    "date": "2016-01-18",
+    "hash_key": "q00MYh2dywH6RA",
+    "state": "draft",
+    "summary": "Invoice summary",
+    "note": "Invoice Note",
+    "company_id": 2459,
+    "statement_no": "IN-001",
+    "payment_options": ["paypal", "cash", "check"],
+    "allow_partial_payments": true,
+    "send_receipts_automatically": true,
+    "po_number": "PO-number",
+    "currency_iso_code": "USD",
+    "currency_symbol": "$",
+    "send_reminders": false,
+    "billed_total": "100.00",
+    "sub_total": "100.00",
+    "total_due": "0.00",
+    "paid_total": "0.00",
+    "created_at": "2015-01-22T19:22:28Z",
+
+    "taxes": [{
+      "id": 3,
+      "name": "VAT",
+      "key": 23,
+      "combined_amount_percent": "5%",
+      "percentage": true
+    }, {...}],
+
+    "discounts": [{
+      "id": 4,
+      "name": "DIS",
+      "key": 145,
+      "combined_amount_percent": "5",
+      "percentage": false
+    }, {...}],
+
+    "shipping_amounts": [{
+      "id": 5,
+      "name": "DHL",
+      "key": 205,
+      "combined_amount_percent": "5",
+      "percentage": false
+    }, {...}],
+
+    "items": [{
+      "id": 245,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "price": "10.00",
+      "quantity": "10",
+      "unit": "hourly",
+      "total": "100.00",
+      "sort_order": 1,
+      "created_at": "2015-01-22T19:22:28Z"
+    }, {...}],
+
+    "expenses": [{
+      "id": 246,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "amount": "10.00",
+      "total": "100.00",
+      "sort_order": 2,
+      "created_at": "2015-01-22T19:22:28Z"
+    },{...}],
+
+    "tasks": [{
+      "id": 300,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "duration": "120",
+      "rate": "10.00",
+      "total": "20.00",
+      "sort_order": 3,
+      "created_at": "2015-01-22T19:22:28Z"
+    }, {...}],
+
+    "trips": [{
+      "id": 340,
+      "date": "2015-10-18",
+      "description": "Item descriptions",
+      "distance": "2",
+      "rate": "10.00",
+      "total": "20.00",
+      "sort_order": 4,
+      "created_at": "2015-01-22T19:22:28Z"
+    }]
+  }
+}
+]

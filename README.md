@@ -13,7 +13,7 @@
 
 ##### Create a container in your storage account, you will need this later.
 
-##### Upload `aws.pdf` to S3 and `azure.pdf` to Azure storage
+##### Upload `invoice_aws.json` to S3 and `invoice_azure.json` to Azure storage
 
 ## Deploying S3Proxy as an App to Cloud Foundry
 
@@ -65,10 +65,10 @@ To test this deployment:
 Hit the following URL:
 
 ```
-http://<appname>.app.<cf instance public ip>.xip.io/imagesaws
-http://<appname>.app.<cf instance public ip>.xip.io/imagesazure
-http://<appname>.app.<cf instance public ip>.xip.io/images3proxyaws
-http://<appname>.app.<cf instance public ip>.xip.io/images3proxyazure
+http://<appname>.app.<cf instance public ip>.xip.io/aws
+http://<appname>.app.<cf instance public ip>.xip.io/azure
+http://<appname>.app.<cf instance public ip>.xip.io/s3proxyaws
+http://<appname>.app.<cf instance public ip>.xip.io/s3proxyazure
 ```
 
 ## Acknowledgement
